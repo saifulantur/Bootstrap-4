@@ -29,13 +29,13 @@ gulp.task('serve', ['sass'], function () {
 
 // Move Font Awesome Fonts folder to src
 gulp.task('webfonts', function () {
-    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
-        .pipe(gulp.dest("src/webfonts"));
+    return gulp.src('node_modules/font-awesome/fonts/*')
+        .pipe(gulp.dest("src/fonts"));
 });
 
 // Move font awesome css file
 gulp.task('fa', function () {
-    return gulp.src('node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+    return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
         .pipe(gulp.dest("src/css"));
 });
 
